@@ -24,8 +24,12 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -40,35 +44,44 @@
   <body>
     <header class="header">
       <div class="container header-content">
-        <div class="logo" data-key="logo">الزاجل</div>
+        <div class="logo" data-key="logo"></div>
 
         <nav class="nav">
-          <a data-key="nav_home">الرئيسية</a>
-          <a data-key="nav_services">الخدمات</a>
-          <a data-key="nav_security">الأمان</a>
-          <a data-key="nav_contact">تواصل</a>
+          <a data-key="nav_home"></a>
+          <a data-key="nav_services"></a>
+          <a data-key="nav_security"></a>
+          <a data-key="nav_contact"></a>
         </nav>
 
         <div class="actions">
-          <button id="darkToggle" aria-label="Dark Mode">🌙</button>
-          <button id="langBtn" aria-label="Language">
-            <img
-              id="langImg"
-              src="assets/images/flag-en.png"
-              alt="EN"
-              width="24"
-            />
+          <!-- Language Switch -->
+          <button
+            class="toggle-btn lang-toggle"
+            id="langBtn"
+            aria-label="Change Language"
+          >
+            <span class="toggle-text">AR</span>
+          </button>
+
+          <!-- Dark Mode Switch -->
+          <button
+            class="toggle-btn theme-toggle"
+            id="darkToggle"
+            aria-label="Toggle Dark Mode"
+          >
+            <span class="toggle-circle"></span>
           </button>
         </div>
+
         <button class="menu-toggle">☰</button>
       </div>
     </header>
 
     <section class="hero reveal">
       <div class="container">
-        <h1 data-key="hero_title">شركة الزاجل للحوالات المالية</h1>
-        <p data-key="hero_sub">أمان • سرعة • ثقة</p>
-        <button class="cta" data-key="hero_btn">تواصل معنا</button>
+        <h1 data-key="hero_title"></h1>
+        <p data-key="hero_sub"></p>
+        <button class="cta" data-key="hero_btn"></button>
       </div>
     </section>
 
@@ -76,51 +89,51 @@
       <div class="container stats-grid">
         <div class="stat">
           <span class="counter" data-target="25000">0</span>
-          <p data-key="stat_clients">عميل</p>
+          <p data-key="stat_clients"></p>
         </div>
         <div class="stat">
           <span class="counter" data-target="120000">0</span>
-          <p data-key="stat_transfers">حوالة</p>
+          <p data-key="stat_transfers"></p>
         </div>
         <div class="stat">
           <span class="counter plus" data-target="600">0</span>
-          <p data-key="authorized_agent">وكيل معتمد</p>
+          <p data-key="authorized_agent"></p>
         </div>
       </div>
     </section>
 
     <section class="services reveal">
       <div class="container">
-        <h2 data-key="services_title">خدماتنا</h2>
+        <h2 data-key="services_title"></h2>
         <div class="service-grid">
-          <div class="card" data-key="service1">حوالات داخلية</div>
-          <div class="card" data-key="service2">حوالات خارجية</div>
-          <div class="card" data-key="service3">صرف العملات</div>
+          <div class="card" data-key="service1"></div>
+          <div class="card" data-key="service2"></div>
+          <div class="card" data-key="service3"></div>
         </div>
       </div>
     </section>
 
     <section class="security reveal">
       <div class="container">
-        <h2 data-key="security_title">الأمان والثقة</h2>
+        <h2 data-key="security_title"></h2>
 
         <div class="security-grid">
           <div class="security-card">
             <span>🔐</span>
-            <h3 data-key="sec1">حماية البيانات</h3>
-            <p data-key="sec10">نستخدم أنظمة متقدمة لحماية معلومات العملاء</p>
+            <h3 data-key="sec1"></h3>
+            <p data-key="sec10"></p>
           </div>
 
           <div class="security-card">
             <span>📜</span>
-            <h3 data-key="sec2">التوافق القانوني</h3>
-            <p data-key="sec20">ملتزمون بجميع اللوائح المالية المحلية</p>
+            <h3 data-key="sec2"></h3>
+            <p data-key="sec20"></p>
           </div>
 
           <div class="security-card">
             <span>⚡</span>
-            <h3 data-key="sec3">تنفيذ سريع</h3>
-            <p data-key="sec30">تحويلات تتم خلال دقائق بأمان كامل</p>
+            <h3 data-key="sec3"></h3>
+            <p data-key="sec30"></p>
           </div>
         </div>
       </div>
@@ -130,29 +143,26 @@
       <div class="container footer-grid">
         <!-- Company -->
         <div class="footer-col">
-          <h3 data-key="footer_company">شركة الزاجل</h3>
-          <p data-key="footer_desc">
-            شركة رائدة في مجال الحوالات المالية الداخلية والخارجية، نلتزم بأعلى
-            معايير الأمان والسرعة.
-          </p>
+          <h3 data-key="footer_company"></h3>
+          <p data-key="footer_desc"></p>
         </div>
 
         <!-- Links -->
         <div class="footer-col">
-          <h3 data-key="footer_links">روابط سريعة</h3>
+          <h3 data-key="footer_links"></h3>
           <ul>
-            <li><a href="#" data-key="nav_home">الرئيسية</a></li>
-            <li><a href="#" data-key="nav_services">الخدمات</a></li>
-            <li><a href="#" data-key="nav_security">الأمان</a></li>
-            <li><a href="#" data-key="nav_contact">تواصل معنا</a></li>
+            <li><a href="#" data-key="nav_home"></a></li>
+            <li><a href="#" data-key="nav_services"></a></li>
+            <li><a href="#" data-key="nav_security"></a></li>
+            <li><a href="#" data-key="nav_contact"></a></li>
           </ul>
         </div>
 
         <!-- Contact -->
         <div class="footer-col">
-          <h3 data-key="footer_contact">تواصل معنا</h3>
+          <h3 data-key="footer_contact"></h3>
           <ul class="contact-list">
-            <li data-key="contact1">📍 ليبيا</li>
+            <li data-key="contact1"></li>
             <li>📞 <span dir="ltr">+967 XXX XXX XXX</span></li>
             <li>✉ info@alzajel.com</li>
           </ul>
@@ -160,22 +170,21 @@
 
         <!-- Trust -->
         <div class="footer-col">
-          <h3 data-key="footer_trust">الثقة والأمان</h3>
+          <h3 data-key="footer_trust"></h3>
           <ul class="trust-list">
-            <li data-key="trust1">✔ معاملات مشفّرة</li>
-            <li data-key="trust2">✔ التزام باللوائح</li>
-            <li data-key="trust3">✔ دعم فني مستمر</li>
+            <li data-key="trust1"></li>
+            <li data-key="trust2"></li>
+            <li data-key="trust3"></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p data-key="footer_title">
-          © 2026 شركة الزاجل للحوالات المالية — جميع الحقوق محفوظة
-        </p>
+        <p data-key="footer_title"></p>
       </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>

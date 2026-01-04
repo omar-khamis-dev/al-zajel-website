@@ -1,0 +1,87 @@
+/* Buttons */
+.cta {
+  background: var(--accent);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.card,
+.security-card {
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+  transition: .4s;
+}
+
+.card {
+  padding: 32px;
+  text-align: center;
+}
+
+.security-card {
+  padding: 30px;
+  text-align: center;
+}
+
+.card:hover,
+.security-card:hover {
+  transform: translateY(-8px);
+  border-top: 4px solid var(--accent);
+}
+
+/* Toggle Buttons */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle-btn {
+  position: relative;
+  height: 36px; 
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+   display:flex;
+ align-items:center;
+ justify-content:center;
+  transition: .3s;
+}
+
+.toggle-btn:hover {
+  background: rgba(255,255,255,.25);
+}
+
+.lang-toggle {
+  min-width: 64px;
+}
+
+.theme-toggle {
+  width: 56px;
+  padding: 0;
+}
+
+.theme-toggle .toggle-circle {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  left: 5px;
+  transition: .3s;
+}

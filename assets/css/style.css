@@ -319,3 +319,71 @@ body {
   font-size: 14px;
   opacity: .8;
 }
+
+/* Toggle Buttons */
+.actions{
+ display:flex;
+ align-items:center;
+ gap:12px;
+}
+
+.toggle-btn{
+ position:relative;
+ height:36px;
+ border-radius:30px;
+ border:none;
+ cursor:pointer;
+ background:rgba(255,255,255,.15);
+ color:#fff;
+ padding:0 16px;
+ font-size:14px;
+ font-weight:600;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ transition:.3s;
+}
+
+.toggle-btn:hover{
+ background:rgba(255,255,255,.25);
+}
+
+/* Language Toggle */
+.lang-toggle{
+ min-width:64px;
+}
+
+.lang-toggle .toggle-text{
+ transition:.3s;
+}
+
+/* Theme Toggle */
+.theme-toggle{
+ width:56px;
+ padding:0;
+}
+
+.theme-toggle .toggle-circle{
+ position:absolute;
+ width:26px;
+ height:26px;
+ border-radius:50%;
+ background:#fff;
+ left:5px;
+ transition:.3s;
+}
+
+/* Dark Active */
+body.dark .theme-toggle{
+ background:var(--accent);
+}
+
+body.dark .theme-toggle .toggle-circle{
+ left:25px;
+ background:#111;
+}
+
+/* Header Dark Text Fix */
+body.dark .header{
+ color:#fff;
+}

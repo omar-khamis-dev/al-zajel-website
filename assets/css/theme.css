@@ -1,0 +1,18 @@
+body.dark {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #eee;
+}
+
+body.dark .theme-toggle {
+  background: var(--accent);
+}
+
+body.dark .theme-toggle .toggle-circle {
+  left: 25px;
+  background: #111;
+}
+
+body.dark .header {
+  color: #fff;
+}

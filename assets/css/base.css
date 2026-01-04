@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'MontserratArabic';
+  src: url('../fonts/ArbFONTS-Montserrat-Arabic-Light.ttf');
+}
+
+/* CSS Variables */
+:root {
+  --primary: #4F2E8C;
+  --secondary: #C94BE8;
+  --accent: #73CE6E;
+
+  --bg: #f6f6f6;
+  --card: #ffffff;
+  --text: #222;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'MontserratArabic', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: .3s;
+}
