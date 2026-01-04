@@ -185,6 +185,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 25px;
+  margin: 40px 0;
 }
 
 .card {
@@ -235,8 +236,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  margin-top: 40px;
-}
+  margin: 40px 0;
+ }
 
 .security-card {
   background: var(--card);
