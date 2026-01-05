@@ -8,3 +8,9 @@ export function initMenu() {
     link.onclick = () => nav.classList.remove("active");
   });
 }
+const toggle = document.querySelector('.menu-toggle');
+const headerRight = document.querySelector('.header-right');
+
+toggle.addEventListener('click', () => {
+  headerRight.classList.toggle('active');
+});

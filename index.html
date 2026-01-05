@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>شركة الزاجل للحوالات المالية</title>
 
-    <meta
-      name="description"
-      content="شركة الزاجل للحوالات المالية تقدم حلول تحويل أموال آمنة وسريعة"
-    />
+    <meta name="description" content="شركة الزاجل للحوالات المالية تقدم حلول تحويل أموال آمنة وسريعة" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="شركة الزاجل للحوالات المالية" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="شركة الزاجل للحوالات المالية" />
-    <meta
-      property="og:description"
-      content="حلول تحويل أموال آمنة وسريعة داخل وخارج اليمن"
-    />
+    <meta property="og:description" content="حلول تحويل أموال آمنة وسريعة داخل وخارج اليمن" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ar_AR" />
 
@@ -40,151 +35,155 @@
         "description": "شركة متخصصة في الحوالات المالية الداخلية والخارجية"
       }
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
-      <div class="container header-content">
-        <div class="logo" data-key="logo"></div>
+        <div class="container header-content">
 
-        <nav class="nav">
-          <a data-key="nav_home"></a>
-          <a data-key="nav_services"></a>
-          <a data-key="nav_security"></a>
-          <a data-key="nav_contact"></a>
-        </nav>
+            <a href="#" class="logo">
+                <img src="assets/images/logo-ar.png" alt="شركة الزاجل للحوالات المالية"
+                    data-logo-ar="assets/images/logo-ar.png" data-logo-ar-dark="assets/images/logo-ar-dark.png"
+                    data-logo-en="assets/images/logo-en.png" data-logo-en-dark="assets/images/logo-en-dark.png">
+            </a>
 
-        <div class="actions">
-          <!-- Language Switch -->
-          <button
-            class="toggle-btn lang-toggle"
-            id="langBtn"
-            aria-label="Change Language"
-          >
-            <span class="toggle-text">AR</span>
-          </button>
+            <!-- Wrapper -->
+            <div class="header-right">
+                <nav class="nav">
+                    <a data-key="nav_home"></a>
+                    <a data-key="nav_services"></a>
+                    <a data-key="nav_security"></a>
+                    <a data-key="nav_contact"></a>
+                </nav>
 
-          <!-- Dark Mode Switch -->
-          <button
-            class="toggle-btn theme-toggle"
-            id="darkToggle"
-            aria-label="Toggle Dark Mode"
-          >
-            <span class="toggle-circle"></span>
-          </button>
+                <div class="actions">
+                    <button class="toggle-btn lang-toggle" id="langBtn">
+                        <span class="toggle-text">AR</span>
+                    </button>
+
+                    <button class="toggle-btn theme-toggle" id="darkToggle">
+                        <span class="toggle-circle"></span>
+                    </button>
+                </div>
+            </div>
+
+            <button class="menu-toggle" aria-label="Menu">☰</button>
         </div>
-
-        <button class="menu-toggle">☰</button>
-      </div>
     </header>
 
+
     <section class="hero reveal">
-      <div class="container">
-        <h1 data-key="hero_title"></h1>
-        <p data-key="hero_sub"></p>
-        <button class="cta" data-key="hero_btn"></button>
-      </div>
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 data-key="hero_title"></h1>
+            <p data-key="hero_sub"></p>
+            <button class="cta" data-key="hero_btn"></button>
+        </div>
     </section>
 
+
     <section class="stats">
-      <div class="container stats-grid">
-        <div class="stat">
-          <span class="counter" data-target="25000">0</span>
-          <p data-key="stat_clients"></p>
+        <div class="container stats-grid">
+            <div class="stat">
+                <span class="counter" data-target="25000">0</span>
+                <p data-key="stat_clients"></p>
+            </div>
+            <div class="stat">
+                <span class="counter" data-target="120000">0</span>
+                <p data-key="stat_transfers"></p>
+            </div>
+            <div class="stat">
+                <span class="counter plus" data-target="600">0</span>
+                <p data-key="authorized_agent"></p>
+            </div>
         </div>
-        <div class="stat">
-          <span class="counter" data-target="120000">0</span>
-          <p data-key="stat_transfers"></p>
-        </div>
-        <div class="stat">
-          <span class="counter plus" data-target="600">0</span>
-          <p data-key="authorized_agent"></p>
-        </div>
-      </div>
     </section>
 
     <section class="services reveal">
-      <div class="container">
-        <h2 data-key="services_title"></h2>
-        <div class="service-grid">
-          <div class="card" data-key="service1"></div>
-          <div class="card" data-key="service2"></div>
-          <div class="card" data-key="service3"></div>
+        
+        <div class="container">
+            <h2 data-key="services_title"></h2>
+            <div class="service-grid">
+                <div class="card" data-key="service1"></div>
+                <div class="card" data-key="service2"></div>
+                <div class="card" data-key="service3"></div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="security reveal">
-      <div class="container">
-        <h2 data-key="security_title"></h2>
+        <div class="container">
+            <h2 data-key="security_title"></h2>
 
-        <div class="security-grid">
-          <div class="security-card">
-            <span>🔐</span>
-            <h3 data-key="sec1"></h3>
-            <p data-key="sec10"></p>
-          </div>
+            <div class="security-grid">
+                <div class="security-card">
+                    <span>🔐</span>
+                    <h3 data-key="sec1"></h3>
+                    <p data-key="sec10"></p>
+                </div>
 
-          <div class="security-card">
-            <span>📜</span>
-            <h3 data-key="sec2"></h3>
-            <p data-key="sec20"></p>
-          </div>
+                <div class="security-card">
+                    <span>📜</span>
+                    <h3 data-key="sec2"></h3>
+                    <p data-key="sec20"></p>
+                </div>
 
-          <div class="security-card">
-            <span>⚡</span>
-            <h3 data-key="sec3"></h3>
-            <p data-key="sec30"></p>
-          </div>
+                <div class="security-card">
+                    <span>⚡</span>
+                    <h3 data-key="sec3"></h3>
+                    <p data-key="sec30"></p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <footer class="footer">
-      <div class="container footer-grid">
-        <!-- Company -->
-        <div class="footer-col">
-          <h3 data-key="footer_company"></h3>
-          <p data-key="footer_desc"></p>
+        <div class="container footer-grid">
+            <!-- Company -->
+            <div class="footer-col">
+                <h3 data-key="footer_company"></h3>
+                <p data-key="footer_desc"></p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-col">
+                <h3 data-key="footer_links"></h3>
+                <ul>
+                    <li><a href="#" data-key="nav_home"></a></li>
+                    <li><a href="#" data-key="nav_services"></a></li>
+                    <li><a href="#" data-key="nav_security"></a></li>
+                    <li><a href="#" data-key="nav_contact"></a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+                <h3 data-key="footer_contact"></h3>
+                <ul class="contact-list">
+                    <li data-key="contact1"></li>
+                    <li>📞 <span dir="ltr">+967 XXX XXX XXX</span></li>
+                    <li>✉ info@alzajel.com</li>
+                </ul>
+            </div>
+
+            <!-- Trust -->
+            <div class="footer-col">
+                <h3 data-key="footer_trust"></h3>
+                <ul class="trust-list">
+                    <li data-key="trust1"></li>
+                    <li data-key="trust2"></li>
+                    <li data-key="trust3"></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Links -->
-        <div class="footer-col">
-          <h3 data-key="footer_links"></h3>
-          <ul>
-            <li><a href="#" data-key="nav_home"></a></li>
-            <li><a href="#" data-key="nav_services"></a></li>
-            <li><a href="#" data-key="nav_security"></a></li>
-            <li><a href="#" data-key="nav_contact"></a></li>
-          </ul>
+        <div class="footer-bottom">
+            <p data-key="footer_title"></p>
         </div>
-
-        <!-- Contact -->
-        <div class="footer-col">
-          <h3 data-key="footer_contact"></h3>
-          <ul class="contact-list">
-            <li data-key="contact1"></li>
-            <li>📞 <span dir="ltr">+967 XXX XXX XXX</span></li>
-            <li>✉ info@alzajel.com</li>
-          </ul>
-        </div>
-
-        <!-- Trust -->
-        <div class="footer-col">
-          <h3 data-key="footer_trust"></h3>
-          <ul class="trust-list">
-            <li data-key="trust1"></li>
-            <li data-key="trust2"></li>
-            <li data-key="trust3"></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p data-key="footer_title"></p>
-      </div>
     </footer>
 
     <!-- <script src="assets/js/main.js"></script> -->
     <script type="module" src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
