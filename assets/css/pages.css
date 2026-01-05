@@ -9,7 +9,7 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(135deg, rgba(79,46,140,.85), rgba(201,75,232,.85)),
+    linear-gradient(135deg, rgba(79,46,140,.75), rgba(201,75,232,.75)),
     url("../images/hero/hero-bg.jpg") center/cover no-repeat;
   z-index: 0;
 }
