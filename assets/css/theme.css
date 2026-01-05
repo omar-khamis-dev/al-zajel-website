@@ -16,3 +16,9 @@ body.dark .theme-toggle .toggle-circle {
 body.dark .header {
   color: #fff;
 }
+
+@media (max-width:768px) {
+  body.dark .theme-toggle .toggle-circle {
+    left: 11px;
+  }
+}

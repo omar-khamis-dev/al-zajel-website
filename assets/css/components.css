@@ -43,7 +43,7 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .toggle-btn {
@@ -84,4 +84,27 @@
   background: #fff;
   left: 5px;
   transition: .3s;
+}
+/* Mobile Menu */
+@media (max-width:768px) {
+  .toggle-btn {
+    height: 18px;
+    font-size: 12px;
+    padding: 0 12px;
+  }
+  
+  .lang-toggle {
+    min-width: 32px;
+    padding: 0;
+  }
+  .toggle-btn {
+    width: 28px;
+    justify-content: center;
+    text-align: center;
+  }
+  .theme-toggle .toggle-circle {
+    width: 16px;
+    height: 16px;
+    left: 2px;
+  }
 }
